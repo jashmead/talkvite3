@@ -15,4 +15,9 @@
 /log/*.log
 /tmp
 
+doc/
+*.swp
+*~
+.DS_Store
+
 bundler_stubs
