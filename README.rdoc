@@ -55,3 +55,4 @@ Phases:
 Caveats:
 * have to restart server to get it to see gem pg
 * had to first create databases for talkvite3 before we could use them
+* replace test_unit with rspec: rails generate rspec:install:

@@ -7,12 +7,22 @@ gem 'rails', '4.0.0'
 # Use SCSS for stylesheets
 gem 'sass-rails', '~> 4.0.0'
 
-# switching from sqlite to postgres
-gem 'pg'  # postgres
-# gem 'postgres-pr'   # postgres specific features
-
 # bootstrap css
 gem 'bootstrap-sass', '>=2.1'
+
+group :development, :test do
+  gem 'rspec-rails'
+end
+
+group :test do
+  gem 'selenium-webdriver'
+  gem 'capybara'
+end
+
+# switching from sqlite to postgres
+gem 'pg'  # postgres
+
+# gem 'postgres-pr'   # postgres specific features
 
 # Use Uglifier as compressor for JavaScript assets
 gem 'uglifier', '>= 1.3.0'
