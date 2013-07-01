@@ -89,25 +89,30 @@
   
 <h2 id="label-README"><a href="README_rdoc.html">README</a></h2>
 
-<p>TalkVite3</p>
+<p>TalkVite3 – don&#39;t like the talk_vite form, slightly annoying, prefer
+the more dynamic TalkVite</p>
 
-<pre>-- don&#39;t like the talk_vite form, slightly annoying, prefer the more dynamic TalkVite</pre>
+<p>setting up third version of ruby on rails version of talkvite,  which is
+turn the baby version of mapsndata</p>
 
-<p>setting up third version of ruby on rails version of talkvite,</p>
-
-<pre>which is turn the baby version of mapsndata</pre>
-
-<p>plan, model by model, going zero, core, easiest to hardest</p>
-
-<pre>-- track in Pivotal Tracker in a bit?</pre>
+<p>plan, model by model, going zero, core, easiest to hardest – track in
+Pivotal Tracker in a bit?</p>
 
 <p>Phases:</p>
 <ul><li>
 <p>Initial</p>
 <ul><li>
-<p>Zero</p>
+<p>Zero:  rails new talkvite3, git init, git push</p>
 </li><li>
-<p>Database:  user &amp; database</p>
+<p>Database:  user &amp; database, add &#39;pg&#39; to <a
+href="Gemfile.html">Gemfile</a>, restart server, git push heroku master, …</p>
+</li><li>
+<p>Static pages</p>
+<ul><li>
+<p>about, contact, home</p>
+</li><li>
+<p>Get heroku to work – route to home page, connect heroku to git</p>
+</li></ul>
 </li></ul>
 </li><li>
 <p>UTP</p>
@@ -121,6 +126,8 @@
 <p>has name (real?), email, twitter_handle, admin_flag</p>
 </li><li>
 <p>has image or at least gravatar</p>
+</li><li>
+<p>do by tracking tutorial</p>
 </li></ul>
 </li><li>
 <p>Talks</p>
@@ -130,6 +137,8 @@
 <p>title, description</p>
 </li><li>
 <p>venue, in a bit (venue will have location)</p>
+</li><li>
+<p>try with blend of micropost and scaffolding</p>
 </li></ul>
 </li><li>
 <p>Posts</p>
@@ -137,6 +146,8 @@
 <p>child of talks &amp; of users</p>
 </li><li>
 <p>has parents, type, content</p>
+</li><li>
+<p>try with blend of talks, relationships, &amp; scaffolding</p>
 </li></ul>
 </li></ul>
 </li><li>
@@ -149,6 +160,20 @@
 <p>Has short string, may have description</p>
 </li><li>
 <p>Has id of user creating</p>
+</li></ul>
+</li><li>
+<p>Venues</p>
+<ul><li>
+<p>first do as simple name, type, description</p>
+</li><li>
+<p>Maps – local resource</p>
+<ul><li>
+<p>maps apply to one talk, multiple talks, current users, &amp; so on</p>
+</li><li>
+<p>implemented with leaflet</p>
+</li><li>
+<p>can be virtual, ultimately</p>
+</li></ul>
 </li></ul>
 </li><li>
 <p>Calendars – virtual, no permanent state</p>
@@ -167,18 +192,13 @@
 <p>include hashtags, user, referenced users, location, image</p>
 </li></ul>
 </li></ul>
-</li><li>
-<p>Venues</p>
-<ul><li>
-<p>Maps – local resource</p>
-<ul><li>
-<p>maps apply to one talk, multiple talks, current users, &amp; so on</p>
-</li><li>
-<p>implemented with leaflet</p>
-</li><li>
-<p>can be virtual, ultimately</p>
 </li></ul>
-</li></ul>
+
+<p>Caveats:</p>
+<ul><li>
+<p>have to restart server to get it to see gem pg</p>
+</li><li>
+<p>had to first create databases for talkvite3 before we could use them</p>
 </li></ul>
 
 </div>

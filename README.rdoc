@@ -23,18 +23,27 @@ Phases:
     * new, signin, signout, close, settings
     * has name (real?), email, twitter_handle, admin_flag
     * has image or at least gravatar
+    * do by tracking tutorial
   * Talks
     * usual resources
     * title, description
     * venue, in a bit (venue will have location)
+    * try with blend of micropost and scaffolding
   * Posts
     * child of talks & of users
     * has parents, type, content
+    * try with blend of talks, relationships, & scaffolding
 * Tags
   * Hashtags
   * Polymorphic, up to users, talks, posts, tweets, and so on
   * Has short string, may have description
   * Has id of user creating
+* Venues
+  * first do as simple name, type, description
+  * Maps -- local resource
+    * maps apply to one talk, multiple talks, current users, & so on
+    * implemented with leaflet
+    * can be virtual, ultimately 
 * Calendars -- virtual, no permanent state
   * has scales:  day, week, month, year
   * uses jquery
@@ -42,12 +51,7 @@ Phases:
   * Tweets -- extension of Posts, local resource
     * conform to twitter regs
     * include hashtags, user, referenced users, location, image
-* Venues
-  * Maps -- local resource
-    * maps apply to one talk, multiple talks, current users, & so on
-    * implemented with leaflet
-    * can be virtual, ultimately 
 
 Caveats:
-  have to restart server to get it to see gem pg
-  had to first create databases for talkvite3 before we could use them
+* have to restart server to get it to see gem pg
+* had to first create databases for talkvite3 before we could use them
