@@ -1,28 +1,53 @@
 == README
 
-This README would normally document whatever steps are necessary to get the
-application up and running.
+TalkVite3
+  -- don't like the talk_vite form, slightly annoying, prefer the more dynamic TalkVite
 
-Things you may want to cover:
+setting up third version of ruby on rails version of talkvite, 
+  which is turn the baby version of mapsndata 
 
-* Ruby version
+plan, model by model, going zero, core, easiest to hardest
+  -- track in Pivotal Tracker in a bit?
 
-* System dependencies
+Phases:
 
-* Configuration
+* Initial
+  * Zero:  rails new talkvite3, git init, git push
+  * Database:  user & database, add 'pg' to Gemfile, restart server, git push heroku master, ...
+  * Static pages
+    * about, contact, home
+    * Get heroku to work -- route to home page, connect heroku to git
+* UTP
+  * Users
+    * Per tutorial, usual resources + sessions (signin, signout)
+    * new, signin, signout, close, settings
+    * has name (real?), email, twitter_handle, admin_flag
+    * has image or at least gravatar
+  * Talks
+    * usual resources
+    * title, description
+    * venue, in a bit (venue will have location)
+  * Posts
+    * child of talks & of users
+    * has parents, type, content
+* Tags
+  * Hashtags
+  * Polymorphic, up to users, talks, posts, tweets, and so on
+  * Has short string, may have description
+  * Has id of user creating
+* Calendars -- virtual, no permanent state
+  * has scales:  day, week, month, year
+  * uses jquery
+* Social Media
+  * Tweets -- extension of Posts, local resource
+    * conform to twitter regs
+    * include hashtags, user, referenced users, location, image
+* Venues
+  * Maps -- local resource
+    * maps apply to one talk, multiple talks, current users, & so on
+    * implemented with leaflet
+    * can be virtual, ultimately 
 
-* Database creation
-
-* Database initialization
-
-* How to run the test suite
-
-* Services (job queues, cache servers, search engines, etc.)
-
-* Deployment instructions
-
-* ...
-
-
-Please feel free to use a different markup language if you do not plan to run
-<tt>rake doc:app</tt>.
+Caveats:
+  have to restart server to get it to see gem pg
+  had to first create databases for talkvite3 before we could use them
