@@ -1,4 +1,10 @@
 Talkvite3::Application.routes.draw do
+
+  # static pages:
+  get "static_pages/home"
+  get "static_pages/help"
+  get "static_pages/about"
+
   # The priority is based upon order of creation: first created -> highest priority.
   # See how all your routes lay out with "rake routes".
 
@@ -53,4 +59,7 @@ Talkvite3::Application.routes.draw do
   #     # (app/controllers/admin/products_controller.rb)
   #     resources :products
   #   end
+
+  # root entry needed to get heroku to work? not helping at this point...
+  # root to: 'static_pages#home'
 end
