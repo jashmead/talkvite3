@@ -1,13 +1,13 @@
 == README
 
 TalkVite3
-  -- don't like the talk_vite form, slightly annoying, prefer the more dynamic TalkVite
+-- don't like the talk_vite form, slightly annoying, prefer the more dynamic TalkVite
 
 setting up third version of ruby on rails version of talkvite, 
-  which is turn the baby version of mapsndata 
+which is turn the baby version of mapsndata 
 
 plan, model by model, going zero, core, easiest to hardest
-  -- track in Pivotal Tracker in a bit?
+-- track in Pivotal Tracker in a bit?
 
 Phases:
 
