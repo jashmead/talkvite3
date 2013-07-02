@@ -1,0 +1,8 @@
+= Config
+
+== Database.yml
+* has to be hand-fixed, databases hand-built (for development & test)
+* consolidate shared code in database.yml
+
+== Caveats
+* something chapter five of tutorial causes the root path to finally work on heroku
