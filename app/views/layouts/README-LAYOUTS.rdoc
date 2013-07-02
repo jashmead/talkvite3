@@ -1,5 +1,7 @@
 = Layouts
 
+== Templates
+
 Treat layouts as working a bit like templates in Keynote:
 
 * menu
@@ -13,3 +15,7 @@ Treat layouts as working a bit like templates in Keynote:
 
 the composite forms should work with responsive design ideas,
 put side by side or one on top of other, as indicated
+
+== Caveats
+* why is _footer inside the container in the main app layout?
+* instantiate contact
