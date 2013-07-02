@@ -1,0 +1,15 @@
+= Layouts
+
+Treat layouts as working a bit like templates in Keynote:
+
+* menu
+* form
+* list
+* map
+* form + list (see microposts), -- composes form & list
+* form + map  -- composes form & map
+* map + list  -- composes map and list
+* tweet-list  -- descends from list
+
+the composite forms should work with responsive design ideas,
+put side by side or one on top of other, as indicated

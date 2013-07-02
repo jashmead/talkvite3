@@ -15,24 +15,25 @@ Phases:
   * Zero:  rails new talkvite3, git init, git push
   * Database:  user & database, add 'pg' to Gemfile, restart server, git push heroku master, ...
   * Static pages
-    * about, contact, home
+    * about, contact, home, help 
     * Get heroku to work -- route to home page, connect heroku to git
+  * Status -- stubs up for all but contacts, heroku not yet working
 * UTP
   * Users
     * Per tutorial, usual resources + sessions (signin, signout)
     * new, signin, signout, close, settings
     * has name (real?), email, twitter_handle, admin_flag
     * has image or at least gravatar
-    * do by tracking tutorial
+    * do by tracking tutorial, chapters 5 thru 9
   * Talks
     * usual resources
     * title, description
     * venue, in a bit (venue will have location)
-    * try with blend of micropost and scaffolding
+    * try with blend of micropost and scaffolding, chapter 10
   * Posts
     * child of talks & of users
     * has parents, type, content
-    * try with blend of talks, relationships, & scaffolding
+    * try with blend of talks, relationships, & scaffolding, chapter 11
 * Tags
   * Hashtags
   * Polymorphic, up to users, talks, posts, tweets, and so on

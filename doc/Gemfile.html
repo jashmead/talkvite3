@@ -55,6 +55,10 @@
   
     <li class="file"><a href="./Rakefile.html">Rakefile</a>
   
+    <li class="file"><a href="./app/models/README-MODELS_rdoc.html">README-MODELS</a>
+  
+    <li class="file"><a href="./app/views/layouts/README-LAYOUTS_rdoc.html">README-LAYOUTS</a>
+  
     <li class="file"><a href="./public/robots_txt.html">robots</a>
   
   </ul>
@@ -79,6 +83,10 @@
   
     <li><a href="./Object.html">Object</a>
   
+    <li><a href="./StaticPagesController.html">StaticPagesController</a>
+  
+    <li><a href="./StaticPagesHelper.html">StaticPagesHelper</a>
+  
   </ul>
 </nav>
 
@@ -95,10 +103,24 @@
 
 <p># Use SCSS for stylesheets gem &#39;sass-rails&#39;, &#39;~&gt; 4.0.0&#39;</p>
 
-<p># switching from sqlite to postgres gem &#39;pg&#39;  # postgres # gem
-&#39;postgres-pr&#39;   # postgres specific features</p>
-
 <p># bootstrap css gem &#39;bootstrap-sass&#39;, &#39;&gt;=2.1&#39;</p>
+
+<p>group :development, :test do</p>
+
+<pre>gem &#39;rspec-rails&#39;</pre>
+
+<p>end</p>
+
+<p>group :test do</p>
+
+<pre>gem &#39;selenium-webdriver&#39;
+gem &#39;capybara&#39;</pre>
+
+<p>end</p>
+
+<p># switching from sqlite to postgres gem &#39;pg&#39;  # postgres</p>
+
+<p># gem &#39;postgres-pr&#39;   # postgres specific features</p>
 
 <p># Use Uglifier as compressor for JavaScript assets gem &#39;uglifier&#39;,
 &#39;&gt;= 1.3.0&#39;</p>

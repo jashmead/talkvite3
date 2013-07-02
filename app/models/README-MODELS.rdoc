@@ -1,0 +1,72 @@
+= Models
+
+== Users
+* name
+* email
+* twitter_handle
+* admin_flag
+* lat/long in some cases
+* may be part of a group of users, i.e. an organization
+
+== Talks
+* subject
+* description
+* start time -- usual timestamp
+* duration -- postgres interval
+* parent user
+* venue
+* may be part of a group of talks, i.e. a meetup, later
+
+== Posts
+* talk_id
+* poster_id
+* type -- join/leave/comment, perhaps others
+* content
+
+== Venues
+* name
+* address -- text
+* address -- broken out?
+* lat/long -- as location type?
+* description
+* shared among talks? users?
+
+== HashTags
+* up to users, talks, posts, & so on
+* tag
+* type -- user, talk, post, venue, & so on
+* description?
+
+== Maps 
+virtual, used as type in venues?
+* can be used for one point
+* can be virtual
+* can be a list
+* can be multilist
+* can evolve in time
+* using leaflet for real
+* setup on server first
+* polymorphic:  everything with a lat/long
+
+== Tweets
+* subclassed from Posts, virtual?
+* @user
+* user_name if available
+* have twitter rules to comply with
+* may have lat/long
+
+== Calendars
+* virtual, pure virtual
+* used by everything with a date
+  * that's talks
+  * posts
+  * tweets
+  * plus stuff connected to them in a date-y way, i.e. everything
+
+== Groups
+* linkage structure for users -- seems most natural
+* recursive
+
+== Organizations
+* parent structure for talks -- seems most natural
+* recursive
