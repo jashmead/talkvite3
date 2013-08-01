@@ -6,3 +6,4 @@
 
 == Caveats
 * something chapter five of tutorial causes the root path to finally work on heroku
+* have to be careful about ownership of the databases; set in database.yml, not in PGUSER

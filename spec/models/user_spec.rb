@@ -109,6 +109,14 @@ describe User do
       it { should_not eq user_for_invalid_password }
       specify { expect(user_for_invalid_password).to be_false }
     end
-
   end
+
+  describe "profile page" do
+    # Replace with code to make a user variable
+    before { visit user_path(user) }
+
+    it { should have_content(user.name) }
+    it { should have_title(user.name) }
+  end
+
 end

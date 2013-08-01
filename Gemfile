@@ -12,6 +12,7 @@ gem 'bootstrap-sass', '>=2.1'
 
 group :development, :test do
   gem 'rspec-rails'
+  gem 'factory_girl_rails'
 end
 
 group :test do
@@ -48,7 +49,8 @@ group :doc do
 end
 
 # Use ActiveModel has_secure_password
-gem 'bcrypt-ruby'
+# NOTE:  bcrypt-ruby 3.1.0 is broken on the Mac
+gem 'bcrypt-ruby', '3.0.1'
 
 # Use unicorn as the app server
 # gem 'unicorn'
